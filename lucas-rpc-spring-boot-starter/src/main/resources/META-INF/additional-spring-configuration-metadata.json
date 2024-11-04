@@ -1,0 +1,66 @@
+{
+  "groups": [
+    {
+      "name": "lucas-rpc",
+      "type": "com.lucas.rpc.core.config.LucasRpcUserConfig",
+      "description": "lucas-rpc配置",
+      "sourceType": "com.lucas.rpc.core.config.LucasRpcUserConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "lucas-rpc.register-center-type",
+      "type": "java.lang.String",
+      "description": "注册中心类型, nacos(default)/zookeeper",
+      "sourceType": "com.lucas.rpc.core.config.LucasRpcUserConfig",
+      "defaultValue": "nacos"
+    },
+    {
+      "name": "lucas-rpc.register-center-address",
+      "type": "java.lang.String",
+      "description": "注册中心地址（带端口）",
+      "sourceType": "com.lucas.rpc.core.config.LucasRpcUserConfig"
+    },
+    {
+      "name": "lucas-rpc.io-Type",
+      "type": "java.lang.String",
+      "description": "io类型, bio(default)/nio",
+      "sourceType": "com.lucas.rpc.core.config.LucasRpcUserConfig",
+      "defaultValue": "bio"
+    },
+    {
+      "name": "lucas-rpc.server-No",
+      "type": "java.lang.String",
+      "description": "服务编号（很多个服务的情况下，用于找到那个服务）",
+      "sourceType": "com.lucas.rpc.core.config.LucasRpcUserConfig"
+    }
+  ],
+  "hints": [
+    {
+      "name": "lucas-rpc.register-center-type",
+      "values": [
+        {
+          "value": "nacos",
+          "description": "默认使用nacos作为注册中心"
+        },
+        {
+          "value": "zookeeper",
+          "description": "使用zookeeper作为注册中心"
+        }
+      ]
+    },
+    {
+      "name": "lucas-rpc.io-Type",
+      "values": [
+        {
+          "value": "bio",
+          "description": "默认使用bio"
+        },
+        {
+          "value": "nio",
+          "description": "使用nio"
+        }
+      ]
+    }
+  ]
+}

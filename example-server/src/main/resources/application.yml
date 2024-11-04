@@ -1,0 +1,7 @@
+server:
+  port: 8081
+lucas-rpc:
+  server-No: LC666
+  register-center-type: nacos
+  register-center-address: 127.0.0.1:8848
+  io-Type: nio
